@@ -3008,7 +3008,7 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Gateway is ready to serve traffic. */
+            /** @description Gateway lightweight readiness passed. This checks the Gateway session cache dependency, Auth readiness, and owner service base URL configuration; it does not prove owner-service business workflows or external provider calls are available. */
             200: {
                 headers: {
                     [name: string]: unknown;
